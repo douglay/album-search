@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>search form</title>
+    </head>
+    <body>
+        <form action="results.php" method="GET">
+            <input type="text" name="artist" placeholder="Artist name"><br>
+            Select a country<br>
+            <input type="radio" name="country" value="US" checked> United States<br>
+            <input type="radio" name="country" value="UK"> United Kingdom<br>
+            <input type="radio" name="country" value="DE"> Germany<br>
+            <input type="radio" name="country" value="FR"> France<br>
+            <input type="radio" name="country" value="CA"> Canada<br>
+            <input type="radio" name="country" value="AU"> Australia<br>
+            <label for="num_rows"># of Rows</label>
+            <select name="num_rows">
+                <option value="25" selected>25</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+                <option value="200">200</option>
+            </select><br>
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>
