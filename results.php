@@ -18,7 +18,12 @@
   <tr>
     <th>Artist</th>
     <th>Album</th>
+    <th>US chart position</th>
+    <th>UK Chart position</th>
     <th>German chart position</th>
+    <th>French Chart position</th>
+    <th>Canadian Chart position</th>
+    <th>Australian Chart position</th>
   </tr>
   <?php
 
@@ -36,11 +41,10 @@
     }
 
     $sql = "select * from albums where artist like '%" . $artist . "%' and " . $country . " <> '' limit " . $num_rows;
-    //echo $sql;  
     $result = $conn->query($sql);
     while ($row = $result->fetch_assoc())
     {
-      echo("<tr><td>" . $row["artist"] . "</td><td>" . $row["album"] . "</td><td>" . $row["de"] . "</td></tr>");
+      echo("<tr><td>" . $row["artist"] . "</td><td>" . $row["album"] . "</td><td>" . $row["us"] . "</td><td>" . $row["uk"] .  "</td><td>" . $row["de"] .  "</td><td>" . $row["fr"] .  "</td><td>" . $row["ca"] .  "</td><td>" . $row["au"] .  "</td></tr>");
     }
   ?>
 </table>
