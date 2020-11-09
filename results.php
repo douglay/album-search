@@ -18,7 +18,7 @@
   <tr>
     <th>Artist</th>
     <th>Album</th>
-    <th>German chart position</th>
+    <th>German position</th>
   </tr>
   <?php
 
