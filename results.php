@@ -18,12 +18,14 @@
   <tr>
     <th>Artist</th>
     <th>Album</th>
-    <th>US chart position</th>
+
+    <th>US Chart position</th>
     <th>UK Chart position</th>
-    <th>German chart position</th>
+    <th>German Chart position</th>
     <th>French Chart position</th>
     <th>Canadian Chart position</th>
     <th>Australian Chart position</th>
+
   </tr>
   <?php
 
